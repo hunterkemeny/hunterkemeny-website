@@ -26,7 +26,7 @@
         
     <div class="container">
         <div class="hunter">
-            <img id="alek-picture" src="./hunter.png">
+            <img id="alek-picture" src="./hunter.jpg">
             <h2 id="name">Hunter Kemeny</h2>
             <a href="mailto:ahk22@duke.edu"><img id="mail" src="./mail.png"></a>
             <a href="https://github.com/hunterkemeny"><img id="github" src="./github.png"></a>
@@ -48,10 +48,13 @@
                 <li>I recently finished the beta for my health app, called <a href="https://github.com/hunterkemeny/OneHealth">OneHealth</a>. The app suggests personalized daily workouts and meal plans to meet your
                     weight goal and provides the most up to date articles/podcasts/videos on nutrition science and longevity. It is currently under review by Apple to be posted on the App Store. <a href="./privacy.html">Privacy Policy</a>.
                 </li>
+
                 <li>I built a <a href ="">scalping algo-trader</a> for stocks that uses deep neural networks to predict next-minute price direction with ~65% accuracy. It's not quite profitable yet due to execution inefficiencies
-                    and overtrading. However, I'm about to automate my profitable day trading routine so that I don't have to wake up at 6 am anymore.
+                    and overtrading. However, I'm about to automate my profitable day trading routine so that I don't have to wake up at 6 am anymore.</li>
+
                 <li>I founded a startup, <a href="https://github.com/hunterkemeny/KronaCash_Website">Krona</a>, with the intention of building an app to automate money saving. Users would theoretically 
                     save as much as physically possible just by owning the app. Unfortunately, we had to shut down because Coronavirus. You can find the app demo <a href="https://github.com/hunterkemeny/KronaCash">here</a>.</li>
+
                 <li>I wrote a 700 page autobiography so that I can focus on the present.</li>
             </ul>
     
@@ -89,20 +92,39 @@
 <script src="vanta.waves.min.js"></script>
 
 <script>
-VANTA.WAVES({
-  el: "#body",
-  mouseControls: true,
-  touchControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x6e6e6e,
-  shininess: 18.00,
-  waveHeight: 11.50,
-  waveSpeed: 0.90,
-  zoom: 0.86
-})
+var browser = (function (agent) {
+        switch (true) {
+            case agent.indexOf("edge") > -1: return "MS Edge (EdgeHtml)";
+            case agent.indexOf("edg") > -1: return "MS Edge Chromium";
+            case agent.indexOf("opr") > -1 && !!window.opr: return "opera";
+            case agent.indexOf("chrome") > -1 && !!window.chrome: return "chrome";
+            case agent.indexOf("trident") > -1: return "Internet Explorer";
+            case agent.indexOf("firefox") > -1: return "firefox";
+            case agent.indexOf("safari") > -1: return "safari";
+            default: return "other";
+        }
+    })(window.navigator.userAgent.toLowerCase());
+
+
+if (browser == "safari") {
+    
+} else {
+    VANTA.WAVES({
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x6e6e6e,
+        shininess: 18.00,
+        waveHeight: 11.50,
+        waveSpeed: 0.90,
+        zoom: 0.86
+    })
+}
+
 </script>
 
 <script type="text/javascript" src="./script.js"></script>
