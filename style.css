@@ -112,6 +112,13 @@ html {
 
 body {
   line-height: 1.5;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+p {
+  line-height: 1.5;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
 }
 
 a {
@@ -152,8 +159,6 @@ h2 {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 10px 2px rgb(130 130 130);
   border-radius: 15px;
   margin-top: 3%;
   margin-right: 20%;
@@ -241,11 +246,11 @@ li {
   margin-right: 20%;
   margin-left: 20%;
   margin-top: 2%;
-  padding-bottom: 24%;
+  padding-bottom: 2%;
 }
 
 #blog-body {
-  background-color: rgba(75, 75, 75, 0.65);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .blog-toc {
@@ -254,7 +259,7 @@ li {
   padding-top: 1%;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 22%;
+  padding-bottom: 2%;
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 2%;
 }
@@ -326,4 +331,44 @@ li {
   border-radius: 2%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+table {
+  border: 1px solid black;
+  border-color: #f7f7f7;
+  border-collapse: separate;
+  display: table;
+  text-indent: initial;
+  border-spacing: 0;
+}
+
+.education-box {
+  border: 1px double #eee;
+  padding: 0.5em 1em;
+  border-color: #f7f7f7;
+}
+
+.education-header {
+  background: #f7f7f7;
+  padding: 0.5em 1em;
+  border: 1px double #eee;
+  font-weight: bold;
+}
+
+#main-header {
+  font-style: italic;
+}
+
+#institution-box {
+  font-style: italic;
+}
+
+#field-box {
+  font-style: italic;
+  font-weight: bold;
+  color: #a31f34;
+}
+
+.school {
+  padding-bottom: 0.5em;
 }

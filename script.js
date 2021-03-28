@@ -1,6 +1,6 @@
 let home = document.getElementById("home");
 let blog = document.getElementById("blog");
-let philosophy = document.getElementById("philosophy");
+let education = document.getElementById("education");
 
 home.onmouseover = function () {
   home.style.textDecoration = "underline";
@@ -10,18 +10,18 @@ blog.onmouseover = function () {
   blog.style.textDecoration = "underline";
 };
 
-philosophy.onmouseover = function () {
-  philosophy.style.textDecoration = "underline";
+education.onmouseover = function () {
+  education.style.textDecoration = "underline";
 };
 
 home.onmouseleave = function () {
-  home.style.textDecoration = "";
+  home.style.textDecoration = "none";
 };
 
 blog.onmouseleave = function () {
-  blog.style.textDecoration = "";
+  blog.style.textDecoration = "none";
 };
 
-philosophy.onmouseleave = function () {
-  philosophy.style.textDecoration = "";
+education.onmouseleave = function () {
+  education.style.textDecoration = "none";
 };

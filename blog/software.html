@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="../style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hunter Kemeny</title>
+  </head>
+
+  <body id="blog-body">
+    <div class="header">
+      <div class="left-header">
+        <p><a id="home" href="../index.html">hunter@kemeny:~#</a></p>
+      </div>
+      <div class="right-header">
+        <pre> <a id="blog" href="../blog.html">~/blog</a>     <a id="education" href="../education.html">~/education</a>     </pre>
+      </div>
+    </div>
+
+    <div class="blog-container">
+      <div class="blog-toc">
+        <h1 class="blog-title">Software Preferences</h1>
+	<p>This is a list of all the software I currently use together with any relevant customization. I wrote this just in case my computers spontaneously combust and I need to onboard new devices, and for anyone interested in my software. The order given is purposeful, and later sections build on the earlier ones. I’ll continuously update this document as my software preferences grow and evolve.</p>
+	<p>Note: I found a good amount of this software through an MIT course called <a href="https://missing.csail.mit.edu/">The Missing Semester of Your CS Education</a>, which I highly recommend checking out.</p>
+	<br>
+	<h2>OS</h2>
+	<p>I use macOS Big Sur and run <a href="https://www.parallels.com/">Parallels</a> as a VM for Windows 10 and Ubuntu 20.04. I’ve only been using Linux for 1.5 years so I haven’t explored other distros in depth (although I’ve played around with CentOS and Kali a bit).</p>
+        <h2>Terminal</h2>
+	<p>I use <a href="https://github.com/alacritty/alacritty">Alacritty</a> because it's GPU accelerated, has great integration with tmux and Vim, and is visually appealing. <a href="https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/">tmux</a> is a must have for terminal productivity. I also like to use <a href="https://github.com/koalaman/shellcheck">shellCheck</a> to lint shell scripts.</p>
+	<h2>zsh</h2>
+	<p>My main shell is zsh. I use <a href="https://github.com/ohmyzsh/ohmyzsh">Oh My Zsh</a> because its fucking awesome, has great themes (I use fino-time because its prompt optimizes for the amount of information I can see while maintaining simplicity, and it takes up a whole line which makes it easy to scroll through shell history and find my cursor), and the plugins of course. <a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a>, <a href="https://github.com/zsh-users/zsh-history-substring-search">zsh-history-substring-search</a>, <a href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a> and <a href="https://github.com/clvv/fasd">fasd</a> are must haves for optimizing command line efficiency. <a href="https://github.com/tldr-pages/tldr">tldr-pages</a> are useful for learning how to use commands when the man pages get annoying.</p>
+        <h2>Styling</h2>
+	<p><a href="https://github.com/psf/black">Black</a> is a necessity for formatting Python. It is a great tool precisely because it is mostly unconfigurable. I use <a href="https://prettier.io/">Prettier</a> to format my web dev files (HTML, CSS, JS).</p>
+	<h2>Vim</h2>
+	<p>Vim is my main text editor and an essential part of my workflow. I recommend learning to use it thoroughly. You can start by completing the built-in vimtutor by running vimtutor from the command line. Also, if you run macOS, a version of Vim comes preinstalled, but you should use the <a href="https://formulae.brew.sh/formula/vim">homebrew</a> version instead because the preinstalled Vim doesn’t come with some dependencies (namely python3) needed to support important plugins. </p>
+	<p>For plugins, I use both <a href="https://github.com/junegunn/vim-plug">vim-plug</a> and <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a>, since some plugins are only compatible with one installer. I write all of my LaTeX in Vim using <a href="https://github.com/lervag/vimtex">VimTeX</a>, and my default pdf previewer is <a href="https://pwmt.org/projects/zathura/">zathura</a>. To write LaTeX painlessly and quickly, I use <a href="https://github.com/SirVer/ultisnips">UltiSnips</a>. Read this <a href="https://castel.dev/post/lecture-notes-1/">article</a> to learn how to optimize the aforementioned setup. To navigate my filesystem in Vim, I use <a href"https://github.com/preservim/nerdtree">nerdtree</a>. I also have trouble with the default undo function in Vim, so I use <a href="https://github.com/mbbill/undotree">undotree</a>. Checkout <a href="https://vimawesome.com/">VimAwesome</a> to find cool plugins.
+	<h2>Filesystem</h2>
+	<p>I use <a href="https://support.apple.com/en-us/HT204837">FileVault</a> to encrypt the startup disks on my Macs. I primarily use <a href="https://man7.org/linux/man-pages/man1/locate.1.html">locate</a> with <a href="https://www.commandlinux.com/man-page/man8/updatedb.8.html">updatedb</a> as my file finder, though <a href="https://github.com/sharkdp/fd">fd</a> is a good alternative if your computer runs slow using updatedb (though I find the speed of locate worth the constant updating of updatedb). <a href="https://github.com/sharkdp/fd">less</a> is more for opening large files. If I was less familiar with my OSs (maybe if I were working on a remote), then I might find <a href="https://github.com/Canop/broot">broot</a> and <a href="https://github.com/junegunn/fzf">fzf</a> more useful.</p>
+	<h2>Workflow</h2>
+	<p>Creating good keybinds is essential for optimizing productivity. I use <a href="https://karabiner-elements.pqrs.org/">Karabiner Elements</a>, <a href="https://www.hammerspoon.org/">Hammerspoon</a>, <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en">Vimium</a>, and configure macOS settings for my keybinds (note that I try to keep these as consistent as possible across my OSs).For macOS, I flip the esc and caps lock, flip ctrl and command, use Ctrl-leftarrow/rightarrow to switch between desktops, close applications with CMD+Q, and sleep the display by moving the mouse to the top corner. I use standard Vimium keybinds (but remember that CMD+D bookmarks a page in Chrome!). I only use Karabiner for the F keys. You can see my Hammerspoon config in my <a href="https://github.com/hunterkemeny/dotfiles">dotfiles</a>, though some notable keybinds are CMD+Return to open Alacritty, CMD+Alt+S to open Spotify, and CMD+Alt+Ctrl+leftarrow/rightarrow to tile my screen.</p>
+	<h2>dotfiles</h2>
+	<p>I use <a href="https://github.com/anishathalye/dotbot#create">Dotbot</a> and symlinks to manage my <a href="https://github.com/hunterkemeny/dotfiles">dotfiles</a>. This is a must have for maintaining consistency and being productive across multiple devices (and OSs). Some great reading about dotfiles can be found <a href="https://dotfiles.github.io/">here</a>.</p>
+	<h2>Browser</h2>
+	<p>I use <a href="https://www.google.com/chrome/">Chrome</a> because its fast and heavily supported. I've already mentioned that I use Vimium; I started using it primarily to get better at Vim, but I stuck with it because it feels natural now (and mice suck). <a href="https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl?hl=en">GoFullPage</a> allows me to screencapture entire websites. If yuo're not using <a href="https://adblockplus.org/">ADBlock Plus</a>, do you even live in the 21st century? <a href="https://www.lastpass.com/">LastPass</a> and computer generated passwords are ESSENTIAL for security, and <a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a> helps me browse seafer. I use <a href="https://www.boomeranggmail.com/">Boomerang</a> to schedule emails. <a href="https://www.grammarly.com/?q=brand&utm_source=google&utm_medium=cpc&utm_campaign=brand_f1&utm_content=486649398671&utm_term=grammarly&matchtype=e&placement=&network=g&gclid=CjwKCAjwr_uCBhAFEiwAX8YJgawcTg6enKJGlp1oEQPF_ADbIcp25W9jBbokw7nphTyeGfiQlqvvJRoCPWMQAvD_BwE&gclsrc=aw.ds">Grammarly</a> ensirs i can grammer, and <a href="https://www.powerthesaurus.org/">Power Thesaurus</a> enables me to dazzle you with piquant sentences. <a href="https://www.joinhoney.com/page/DR-US-Simplified-Yellow-General/?utm_source=goog&utm_medium=sem&utm_campaign=GOOG_US_200603_Brand_All_All_Brand-Pure_RSA_DR-US-Simplified-Yellow-General&utm_content=DR-US-Simplified-Yellow-General&gclid=CjwKCAjwr_uCBhAFEiwAX8YJgbAVVD2fZvq7P-nRoQpH-V-TCZWpPEhgVRFDMYnetQ81eQUkKsv71RoCZ18QAvD_BwE&from=r">Honey</a> is a Krona knockoff for the web, and <a href="https://lustre.ai/join?utm_source=google&utm_medium=cpc&utm_campaign=search_brand&gclid=CjwKCAjwr_uCBhAFEiwAX8YJgVEiXjvqAUMmZBObKLhjpIcMOj2HSeHih_f1dB8tRSpq_8Mxigsg6xoCsjIQAvD_BwE">Lustre</a> helps you find the best of everything. <a href="https://endnote.com/">EndNote</a> makes it much easier to find and read academic PDFs by linking with your .edu email. Lastly, <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc">JSONView</a> and <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en">React Developer Tools</a> help me develop on the web.</p>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="../script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html>
